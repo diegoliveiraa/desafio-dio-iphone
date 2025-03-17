@@ -2,13 +2,14 @@
 
 Este é um projeto simples desenvolvido em Java que simula as funcionalidades básicas de um iPhone, abrangendo três aspectos principais:
 
-✅ **Reprodutor Musical**  
-✅ **Aparelho Telefônico**  
-✅ **Navegador na Internet**  
+✅ **Reprodutor Musical**\
+✅ **Aparelho Telefônico**\
+✅ **Navegador na Internet**
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
+
 - **Java** (versão 11+)
 - **Paradigma POO (Programação Orientada a Objetos)**
 - **IntelliJ IDEA** (IDE recomendada)
@@ -34,16 +35,19 @@ Este é um projeto simples desenvolvido em Java que simula as funcionalidades b�
 ## 📌 Funcionalidades Implementadas
 
 ### 🎵 **Reprodutor Musical**
+
 - `tocar()`: Inicia a reprodução da música
 - `pausar()`: Pausa a reprodução
 - `selecionarMusica(String musica)`: Escolhe a música a ser tocada
 
 ### 📞 **Aparelho Telefônico**
+
 - `ligar(String numero)`: Realiza uma chamada telefônica
 - `atender()`: Atende uma chamada recebida
 - `iniciarCorreioVoz()`: Inicia o correio de voz
 
 ### 🌍 **Navegador na Internet**
+
 - `exibirPagina(String url)`: Exibe a página informada
 - `adicionarNovaAba()`: Adiciona uma nova aba ao navegador
 - `atualizarPagina()`: Atualiza a página atual
@@ -53,6 +57,7 @@ Este é um projeto simples desenvolvido em Java que simula as funcionalidades b�
 ## 📖 Exemplo de Uso
 
 ### **Entrada no terminal:**
+
 ```sh
 Selecionando a música Como tudo deve ser - Charlie Brown Jr
 Reproduzindo a música
@@ -67,7 +72,41 @@ Atualizando a página
 
 ---
 
+## 📊 Diagrama UML
+Abaixo está o diagrama UML representando a modelagem do projeto:
+
+```mermaid
+classDiagram
+    class Iphone {
+    }
+
+    class ReprodutorMusical {
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
+    }
+
+    class AparelhoTelefonico {
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
+    }
+
+    class NavegadorInternet {
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
+
+    Iphone ..|> ReprodutorMusical
+    Iphone ..|> AparelhoTelefonico
+    Iphone ..|> NavegadorInternet
+```
+
+---
+
 ## 🔥 Melhorias Futuras
+
 - Implementar interface gráfica para simulação visual
 - Adicionar novas funcionalidades, como histórico de chamadas e playlists
 - Criar testes unitários para validação do código
@@ -75,5 +114,6 @@ Atualizando a página
 ---
 
 ## 📌 Autor
+
 Desenvolvido por **Diego Oliveira**. 😊
 
